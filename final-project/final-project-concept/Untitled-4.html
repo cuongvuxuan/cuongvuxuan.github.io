@@ -1,0 +1,280 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Mobile Nav with JS, Step 5</title>
+    
+    <link rel="stylesheet" href="css/style.css">       
+<style>
+        
+        
+/* 
+Reset
+*/        
+
+
+
+ #desktop-nav {
+        display: none;
+    }
+  
+        
+        
+/* 
+Layout, mobile first
+*/   
+        
+body,
+section {
+    padding-top: 13vw;
+    color: darkgoldenrod;
+    background-color: black;
+}     
+
+article,p {
+    margin: 1em 0;
+}
+
+footer {
+    padding: 25vh 0;
+}
+        
+#desktop-nav ul,        
+h1,h2,h3,
+p {
+   padding: 0 20px;         
+        }
+               
+        
+/* 
+Nav
+*/        
+        
+        
+/** 
+Nav, general
+**/
+        
+
+        
+nav ul {
+    list-style-type: none;
+}
+
+nav a {
+    color: rgb(240,240,240);
+    background-color: rgba(50,60,70,0.8);
+} 
+
+nav a:hover {
+    color: #fff;
+    background-color: rgb(255,128,0);
+} 
+        
+/** 
+Nav, mobile
+**/       
+        
+#burger-icon {
+    margin: 0 20px;
+}
+
+#burger-icon div {
+    width: 30px;
+    height: 5px;
+    border-radius: 2px;
+    background-color: rgba(150,160,170,0.9);
+    margin: 3px 0 0 0;
+}
+
+
+#burger-icon:hover div {
+    background-color: rgb(160,170,180);
+}
+
+#burger-icon:hover {
+cursor: pointer;
+    }
+
+#mobile-nav ul {
+    margin-top: 11px;
+}
+
+#mobile-nav ul li {
+    margin-top: 1px;
+}
+
+#mobile-nav ul li a {
+    display: inline-block;
+    width: 100%;
+    padding: 10px 20px; 
+    font-size: 1em;
+}
+
+
+#mobile-nav {
+    position: fixed;
+    width: 100%;
+    top: 0;
+    height: 40px;
+    padding-top: 5px;
+    overflow-x: hidden;
+    background-color: rgba(230,240,240,0.8);
+}
+        
+        
+/** 
+Nav, desktop
+**/   
+        
+#desktop-nav {
+    position: fixed;
+    top: 0;
+}
+
+#desktop-nav ul {
+    display: flex;
+}
+
+#desktop-nav ul li a {
+    padding: 3px 5px;
+    margin-right: 2px;
+}
+
+        
+        
+/* 
+Responsive design, mobile first 
+*/
+        
+@media only screen and (min-width: 600px) {
+
+
+    /* 
+    Nav, desktop
+    */
+
+    #desktop-nav {
+        display: block;
+    }
+
+    #mobile-nav {
+        display: none;
+    }
+
+    /* 
+    Layout, desktop 
+    */   
+
+    body,
+    section {
+        padding-top: 4vw;
+    } 
+
+    #desktop-nav ul,        
+    h1,h2,h3,
+    p {
+        padding: 0 10vw;         
+    }
+
+    
+    
+</style>
+    
+<script>
+        
+var minHeight = 40;
+var maxHeight = 195;      
+        
+        
+function toggleMobileNav() {
+  var x = document.getElementById("mobile-nav");
+  if (x.style.height === maxHeight + "px") {
+    x.style.height = minHeight + "px";
+  } else {
+    x.style.height = maxHeight + "px";
+  }
+}
+
+function hideMobileNav() {
+    document.getElementById('mobile-nav').style.height=minHeight + "px"
+}        
+        
+</script>
+    
+</head>
+    
+<body>
+  <div>
+<header>  
+  <h1>MEDIA MANAGEMENT AGENCY</h1>  
+</header>
+</div>    
+    
+<h4>To be strong means to manage your weakness.</h4>    
+<img src="img/japanese-word-for-tiger.png" width="90%">    
+    
+ <section>               
+        <article>
+              <p><h2>About</h2></p>
+              <p><span class="article-first-words">Vu Manh Cuong</span></p>       
+            <img src="img/25395865_325661351268188_4161823240870471244_n.jpg" width="27%">
+           <p>Founded MEDIA MANAGEMENT AGENCY in 2020</p>
+           <p>Based in Berlin</p>
+           <p>Born & raised in Germany</p>
+           <p>Birth year: 1993</p>
+           <p>Nationality: Vietnamese</p>  
+        </article>      
+</section>
+    
+<hr>  
+    
+<section>                         
+        <article>
+            <p><h2>Service</h2></p>
+            <p>Marketing Management</p>        
+            <p>Web Development/Design</p>
+    <p>Languages:</p>
+               <p>German (Native Speaker)<p> 
+               <p>English B1 (Intermediate English)</p> <p>Vietnamese (Mother Tongue)</p>     
+        </article>   
+</section>
+
+<hr>     
+
+<section>         
+       <article>
+           <p><h2>Contact</h2></p>
+           <p> 
+           <a href="https://www.facebook.com/larusso.vu" target="_blank">
+           Facebook:
+           Vu Manh Cuong
+           </a>   
+          </p>
+          <p>Whatsapp: 015237351329</p>
+          <p>Phone: 017695744325</p>
+       </article>      
+</section>  
+
+<hr>
+
+ <p><h3>If this is what You Want...</h3></p>
+
+<img src="img/Screen-Shot-2017-08-17-at-3.20.28-PM.png" width="90%" >
+
+<hr>
+    
+    <footer> 
+        <p>
+         <a href="http://www.moneytree-clothing.com" target="_blank">
+        &copy; www.moneytree-clothing.com 
+         </a>   
+        </p>    
+    </footer>      
+
+</body>
+
+</html>
+
+

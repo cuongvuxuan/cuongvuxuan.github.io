@@ -1,0 +1,164 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head> 
+<title>SPQR</title>
+    <meta charset="utf-8">
+<link rel="stylesheet" href="css/style.css">
+    
+    <style>
+        
+        body {
+            font-size: 1em;
+            text-align: center;
+        }
+        
+        header {
+            color: red;
+        }
+        
+        #main-nav {
+            display: none;
+        }
+        
+        #burger-icon {
+            width: 40px;
+            height: 40px;
+            background-color: black;
+        }
+        
+        nav ul {
+    list-style-type: none;
+        }
+        
+#burger-icon {
+    margin: 0 20px;
+}
+
+#burger-icon div {
+    width: 30px;
+    height: 5px;
+    border-radius: 2px;
+    background-color: rgba(150,160,170,0.9);
+    margin: 3px 0 0 0;
+}
+
+
+#burger-icon:hover div {
+    background-color: rgb(160,170,180);
+}
+
+#burger-icon:hover {
+cursor: pointer;
+    }
+
+#mobile-nav ul {
+    margin-top: 11px;
+}
+
+#mobile-nav ul li {
+    margin-top: 1px;
+}
+
+#mobile-nav ul li a {
+    display: inline-block;
+    width: 100%;
+    padding: 10px 20px; 
+    font-size: 1em;
+    background-color: rgba(150,0,0,0.8);
+}
+
+
+#mobile-nav {
+    position: fixed;
+    width: 100%;
+    top: 0;
+    height: 40px;  /*Here's the magic: try and set the value to 195px*/
+    padding-top: 5px;
+    overflow: hidden;
+}
+        
+        
+    
+        @media only screen and (min-width: 600px) {
+            
+             body {
+                 font-size: 1.8em;
+        }
+            
+            #main-nav {
+               display: block;
+            }
+            
+        
+            #mobile-nav {
+               display: none;
+            }
+        }
+        
+        a {
+            text-decoration: none;
+            color: red;
+        }
+    
+    </style>
+    
+</head>
+    
+
+<body>
+
+<header>
+    <h1>MEDIA MANAGEMENT AGENCY</h1>
+    
+    <div id="#"></div>
+         
+      <nav id="mobile-nav">
+            <div id="burger-icon" onclick="document.getElementById('mobile-nav').style.height = '195px'">
+                <div></div>
+                <div></div>                
+                <div></div>             
+            </div>
+    
+            <ul>
+            <li><a href="#">Home</a></li>
+            <li><a href="#section1">About</a></li>   
+            <li><a href="#section2">Service</a></li>  
+            <li><a href="#section3">Contact</a></li>  
+            </ul>    
+        </nav>
+    
+    <nav id="main-nav">
+      <a href="#">Home</a>
+      <a href="#section-1">About</a>
+      <a href="#section-2">Service</a>
+      <a href="#section-3">Contact</a>
+    </nav>
+</header>
+    
+    <section id="section-1">
+            <h2>About</h2>
+        <p>SPQR, an abbreviation for Senātus Populusque Rōmānus (Classical Latin: [sɛˈnaː.tus pɔpuˈlus.kʷɛ roːˈmaː.nus]; English: "The Roman Senate and People"; or more freely "The Senate and People of Rome"), is an emblematic abbreviated phrase referring to the government of the ancient Roman Republic. It appears on Roman currency, at the end of documents made public by inscription in stone or metal, and in dedications of monuments and public works.</p>
+    </section>
+    
+        <section id="section-2">
+            <h2>Service</h2>
+        <p>SPQR, an abbreviation for Senātus Populusque Rōmānus (Classical Latin: [sɛˈnaː.tus pɔpuˈlus.kʷɛ roːˈmaː.nus]; English: "The Roman Senate and People"; or more freely "The Senate and People of Rome"), is an emblematic abbreviated phrase referring to the government of the ancient Roman Republic. It appears on Roman currency, at the end of documents made public by inscription in stone or metal, and in dedications of monuments and public works.</p>
+    </section>
+    
+        <section id="section-3">
+            <h2>Contact</h2>
+        <p>SPQR, an abbreviation for Senātus Populusque Rōmānus (Classical Latin: [sɛˈnaː.tus pɔpuˈlus.kʷɛ roːˈmaː.nus]; English: "The Roman Senate and People"; or more freely "The Senate and People of Rome"), is an emblematic abbreviated phrase referring to the government of the ancient Roman Republic. It appears on Roman currency, at the end of documents made public by inscription in stone or metal, and in dedications of monuments and public works.</p>
+    </section>
+    
+    <aside>
+    </aside>
+    
+<footer>
+</footer>   
+    
+    
+    
+</body>
+
+</html>

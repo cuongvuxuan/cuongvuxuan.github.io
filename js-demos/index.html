@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head> 
+<title>javascript demos</title>
+    
+</head>
+
+<body>
+    
+<h1>Changes are the result of Choices</h1>
+<p id="demo">This is your perspective.</p>
+<button type="button" onclick="myFunction()">Change your perspective</button>
+
+<script>
+function myFunction() {
+ document.getElementById("demo").innerHTML = "Perspective changed.";
+}
+</script>    
+    
+<button onclick='alert("Hello World!")'>click here</button>
+    
+   <button type="button"
+onclick="document.getElementById('demo').innerHTML = Date()">
+Time to make a Change</button>
+      
+    <p id="demo"></p>
+    
+    <button onclick="document.getElementById('myImage').src='img/A-Beginner%E2%80%99s-Guide-to-Influencer-Marketing-1.jpg'
+">you want this?</button>
+
+<img id="myImage" src="img/04_web_design.jpg" style="width:30em">
+
+<button onclick="document.getElementById('myImage').src='img/WordPress-Content-Management-Systems-Perth-Australia.png'">you need this!</button>
+        
+</body>
+
+</html>

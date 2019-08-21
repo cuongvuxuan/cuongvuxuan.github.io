@@ -1,44 +1,171 @@
 <!DOCTYPE html>
-<html lang="en">
+<html>
+<head>
+<meta name="viewport" content="width=device-width, initial-scale=1">
 
-<head> 
+<style>
+body {
+  font-family: Arial, Helvetica, sans-serif;
+  margin: 0;
+  text-align: center;
+}
     
-<!-- 
-Version: 1.1.1.0.
-Author: Vu Manh Cuong
--->
+    header {
+        color:#fff;
+        background-color: red;
+        padding: 3em;
+    }
     
-<title>Media Management Agency | Home</title>
+     footer {
+        color: #fff;
+        background-color: red;
+        padding: 1em;
+    }
+    
+    a {
+        text-decoration: none;
+        color: black;
+    }
+    
+    
+    
+    h3 {
+        font-size: 2.5em;
+    }
+    
+     h4 {
+        font-size: 2em;
+        color: gold;
+        padding-left: 12em;
+        padding-right: 30px;
+    }
+        
+    #section-head {
+                background-image:url(img/tiger-2320819_1920.jpg);
+                background-position: center;
+                height: 400px;
+                padding-top: 200px;
+            } 
+    
+    #section-foot {
+        background-image: url(img/Screen-Shot-2017-08-17-at-3.20.28-PM.png);
+        background-position: center;
+        height: 400px;
+        padding-top: 200px;
+    }
+
    
-    <link rel="stylesheet" href="css/style.css">
-    
-    <link href="https://fonts.googleapis.com/css?family=Roboto+Condensed&display=swap" rel="stylesheet">
-    
-</head>
 
+.navbar {
+  overflow: hidden;
+  background-color: #333; 
+   
+}
+
+.navbar a {
+  float: left;
+  font-size: 16px;
+  color: white;
+  text-align: center;
+  padding: 14px 16px;
+  text-decoration: none;
+}
+
+.subnav {
+  float: left;
+  overflow: hidden;
+}
+
+.subnav .subnavbtn {
+  font-size: 16px;  
+  border: none;
+  outline: none;
+  color: white;
+  padding: 14px 16px;
+  background-color: inherit;
+  font-family: inherit;
+  margin: 0;
+}
+
+.navbar a:hover, .subnav:hover .subnavbtn {
+  background-color: red;
+}
+
+.subnav-content {
+  display: none;
+  position: absolute;
+  left: 0;
+  background-color: red;
+  width: 100%;
+  z-index: 1;
+}
+
+.subnav-content a {
+  float: left;
+  color: white;
+  text-decoration: none;
+}
+
+.subnav-content a:hover {
+  background-color: #eee;
+  color: black;
+}
+
+.subnav:hover .subnav-content {
+  display: block;
+}
+ 
+    
+</style>
+</head>
+    
+    
 <body>
     
-        <header>
-            <h1>MEDIA MANAGEMENT AGENCY</h1>
+    
+<div class="navbar">
+    <div class="subnav">
+  <button class="subnavbtn"><a href="index.html">Home</a><i class="fa fa-caret-down"></i></button>
+    <div class="subnav-content">
+      <a href="#section-1">About</a>
+      <a href="#section-2">Services</a>
+      <a href="#section-3">Contact</a>
+    </div>
+  </div> 
+  <div class="subnav">
+      <button class="subnavbtn"><a href="service.html">Services</a><i class="fa fa-caret-down"></i></button>
+    <div class="subnav-content">
+      <a href="#bring">Marketing Management</a>
+      <a href="#deliver">Web Developement</a>
+    </div>
+  </div>   
+  <div class="subnav">
+      <button class="subnavbtn"><a href="#contact"> Contact</a><i class="fa fa-caret-down"></i></button>
+    <div class="subnav-content">
+      <a href="#link1">Imprint</a>
+      <a href="#link2">Social Media</a>
+      <a href="#link3">Terms & Conditions</a>
+      <a href="#link4">Privacy Policy</a>
+    </div>
+  </div>
+  <a href="http://www.moneytree-clothing.com" target="_blank">.</a>
+</div>
 
-            <nav class="main-navigation">
-                <ul>
-                    <li><a href="index.html">Home</a></li>
-                    <li><a href="#">About</a></li>
-                    <li><a href="skills.html">Service</a></li>
-                    <li><a href="#">Contact</a></li> 
-                </ul>     
-            </nav>                             
-        </header>
-        
-           <div></div>        
-        
-          
-<section>               
+
+<header>  
+  <h1>MEDIA MANAGEMENT AGENCY</h1>  
+</header>
+   
+
+  <section id="section-head"> 
+<h4>To be strong means to manage your weakness.</h4>     
+  </section>
+    
+ <section id="section-1">               
         <article>
               <p><h2>About</h2></p>
               <p><span class="article-first-words">Vu Manh Cuong</span></p>       
-            <img src="img/25395865_325661351268188_4161823240870471244_n.jpg" width="20%">
+            <img src="img/25395865_325661351268188_4161823240870471244_n.jpg" width="27%">
            <p>Founded MEDIA MANAGEMENT AGENCY in 2020</p>
            <p>Based in Berlin</p>
            <p>Born & raised in Germany</p>
@@ -47,22 +174,26 @@ Author: Vu Manh Cuong
         </article>      
 </section>
     
-<hr>  
+<hr><hr>   
     
-<section>                         
+<section id="section-2">                         
         <article>
-            <p><h2>Service</h2></p>
+            <p><a href="service.html">
+            <h2>Services</h2></a></p>
             <p>Marketing Management</p>        
             <p>Web Development/Design</p>
-            <p>Languages: German, English, Vietnamese</p>           
+    <p>Languages:</p>
+               <p>German (Native Speaker)<p> 
+               <p>English B1 (Intermediate English)</p> <p>Vietnamese (Mother Tongue)</p>     
         </article>   
 </section>
 
-<hr>     
+<hr><hr>      
 
-<section>         
+<section id="section-3">         
        <article>
-           <p><h2>Contact</h2></p>
+           <p><a href="#contact">
+            <h2>Contact</h2></a></p>
            <p> 
            <a href="https://www.facebook.com/larusso.vu" target="_blank">
            Facebook:
@@ -74,11 +205,14 @@ Author: Vu Manh Cuong
        </article>      
 </section>  
 
-<hr>
 
- <p><h2>If this is what You Wanted...</h2></p>
-        
-        <p></p>
+
+<section id="section-foot">    
+ <p><a href="service.html">
+     <h3>If this is what You Want...</h3></a></p>
+    <p><button><a href="service.html">click here!</a></button></p>
+ </section>   
+
     
     <footer> 
         <p>
@@ -86,9 +220,8 @@ Author: Vu Manh Cuong
         &copy; www.moneytree-clothing.com 
          </a>   
         </p>    
-    </footer>   
-        
+    </footer>      
+
 </body>
-    
-    
+
 </html>
