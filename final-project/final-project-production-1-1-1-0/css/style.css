@@ -1,7 +1,7 @@
 /*
 Stylesheet for final project, MAT 21a, 
 DCI Berlin
-Vu Manh Cuong
+Vu Xuan Cuong
 */
 
 /*
@@ -33,8 +33,11 @@ footer {
 
 h5 {
     font-size: 2em;
-    color: red;
     background-color: #fff;
+}
+
+.h5-manage {
+    color:red;
 }
 
 h2 {
@@ -58,6 +61,23 @@ a {
     color: black;
 }
 
+   #section-head {
+                background-image:url(../img/animal-4004844_960_720.jpg);
+                background-position: center;
+                height: 420px;
+                padding-top: 180px;
+                text-align: center;
+                background-repeat:no-repeat;
+            } 
+    
+   #section-foot {
+        background-image: url(../img/Screen-Shot-2017-08-17-at-3.20.28-PM.png);
+        background-position: center;
+        height: 400px;
+        padding-top: 170px;
+        text-align: center;
+    }
+
 #section-1, #section-3 {
     text-align: center; 
     padding-bottom: 1em;
@@ -69,22 +89,21 @@ a {
     padding-bottom: 2em;
 }
 
-#section-a, #section-b {
-    padding-top: 30px;
-    padding-bottom: 30px;
-}
 
 #section-I {
-    text-align: center;
+    text-align: left;
     padding-top: 20px;
     padding-bottom: 20px;
 }
 
 #section-I article {
-    text-align: center;
-    padding-top: 0px;
-    padding-bottom: 0px;
-    line-height: 4em;
+    padding-left: 30px;
+    padding-right: 30px;
+}
+
+#section-I article li {
+  padding-top: 10px;
+  padding-bottom: 10px;
 }
 
 #section-II {
@@ -94,23 +113,12 @@ a {
     padding-bottom: 30px;
 }
 
+#section-a, #section-b {
+    padding-top: 30px;
+    padding-bottom: 30px;
+}
 
-   #section-head {
-                background-image:url(../img/animal-4004844_960_720.jpg);
-                background-position: center;
-                height: 420px;
-
-                padding-top: 180px;
-                text-align: center;
-            } 
-    
-   #section-foot {
-        background-image: url(../img/Screen-Shot-2017-08-17-at-3.20.28-PM.png);
-        background-position: center;
-        height: 350px;
-        padding-top: 170px;
-        text-align: center;
-    } 
+ 
 
  .column {
     padding-top: 1em;
