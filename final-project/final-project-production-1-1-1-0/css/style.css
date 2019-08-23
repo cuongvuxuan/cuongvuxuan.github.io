@@ -93,17 +93,18 @@ a {
 #section-I {
     text-align: left;
     padding-top: 20px;
-    padding-bottom: 20px;
+    padding-bottom: 20px; 
 }
 
 #section-I article {
-    padding-left: 30px;
-    padding-right: 30px;
+    padding-left: 20px;
+    padding-right: 20px;
 }
 
 #section-I article li {
   padding-top: 10px;
   padding-bottom: 10px;
+  font-size: 2em;
 }
 
 #section-II {
@@ -122,6 +123,7 @@ a {
 
  .column {
     padding-top: 1em;
+    padding-left: 10px;
 }
 
 /*
@@ -168,18 +170,16 @@ Navigation
     float: right;
     display: block;
   }
-}
 
-#section-I {
-    line-height: 9px;
-    font-size: 9px
-}
 
-.column {
-    padding-top: 1em;
-}
 
-@media screen and (max-width: 600px) {
+#section-I article li {
+  padding-top: 5px;
+  padding-bottom: 5px;
+  line-height: 10px;
+  font-size: 12px 
+    }
+
   .topnav.responsive {position: relative;}
   .topnav.responsive .icon {
     position: absolute;
@@ -199,6 +199,8 @@ Navigation
     text-align: left;
   }
 }
+
+
 
 /*
 Color
