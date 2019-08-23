@@ -170,6 +170,15 @@ Navigation
   }
 }
 
+#section-I {
+    line-height: 9px;
+    font-size: 9px
+}
+
+.column {
+    padding-top: 1em;
+}
+
 @media screen and (max-width: 600px) {
   .topnav.responsive {position: relative;}
   .topnav.responsive .icon {
